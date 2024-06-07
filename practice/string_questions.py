@@ -9,3 +9,4 @@ if '0' in n:
     print('Yes, there is 0 in',n)
 else:
     print('No, there is no 0 in',n)
+
