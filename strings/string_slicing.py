@@ -51,6 +51,3 @@ print(a[3:])
 # getting the original string "str = str[:n] + str[n:]"
 print('# getting the original string')
 print(a[:4]+a[4:])
-
-# custom
-
