@@ -12,7 +12,7 @@ while i<=N:
 print('The sum of all the odd numbers till',N,'is: ',total)
     
 # 2. WAPP to find the factorial of a N
-N = int(input('Enter a number to be added: '))
+N = int(input('Enter a number to get the factorial: '))
 fct = 1
 i = 1
 while i<N:
@@ -28,22 +28,27 @@ n3 = int(input('Enter the third number: '))
 max_num = min_num = None
 
 if n1>n2 and n1>n3:
+    max_num = n1
     if n2>n3:
-        max_num = n1
         min_num = n3
     else:
         min_num = n2
 elif n2>n1 and n2>n3:
+    max_num = n2
     if n1>n3:
-        max_num = n1
         min_num = n3
     else:
         min_num = n1
 elif n3>n1 and n3>n2:
+    max_num = n3
     if n1>n2:
-        max_num = n3
         min_num = n2
     else:
         min_num = n1
+else:
+    print('All are equal')
+        
+    
 print('Largest number: ', max_num)
 print('Smallest number: ', min_num)
+
