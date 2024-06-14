@@ -52,3 +52,17 @@ else:
 print('Largest number: ', max_num)
 print('Smallest number: ', min_num)
 
+# 4. WAPP to input three sides of a right angle triangle and check whether they are pythagorean triplets
+print('\ns#4. Pythagorean triplets')
+s1 = int(input('Enter the first side: '))
+s2 = int(input('Enter the second side: '))
+s3 = int(input('Enter the third side: '))
+
+if s1**2 == s2**2 + s3**2:
+    print('The entered sides are pythagorean triplets\nHypotenuse:', s1)
+elif s2**2 == s1**2 + s3**2:
+    print('The entered sides are pythagorean triplets\nHypotenuse:', s2)
+elif s3**2 == s1**2 + s2**2:
+    print('The entered sides are pythagorean triplets\nHypotenuse:', s3)
+else:
+    print('No they are not pythagorean triplets')
