@@ -66,3 +66,21 @@ elif s3**2 == s1**2 + s2**2:
     print('The entered sides are pythagorean triplets\nHypotenuse:', s3)
 else:
     print('No they are not pythagorean triplets')
+
+# 5. WAPP to make a BMI Calculator
+print('\n#5. BMI Calculator')
+
+weight = int(input('Enter your weight (in kg): '))
+height = int(input('Enter your height (in cm): '))
+height = height / 100
+bmi = (weight) / (height*height)
+print(bmi)
+if bmi < 18.5 :
+    print('You are Underweight, BMI:', bmi)
+elif bmi < 25:
+    print('You are Normal, BMI:', bmi)
+elif bmi < 30:
+    print('You are Overweight, BMI:', bmi)
+else:
+    print('You are Obese, BMI:', bmi)
+     
