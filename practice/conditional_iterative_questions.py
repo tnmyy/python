@@ -83,4 +83,16 @@ elif bmi < 30:
     print('You are Overweight, BMI:', bmi)
 else:
     print('You are Obese, BMI:', bmi)
-     
+
+# 6. WAPP to find the sum of series: 1 + x^1 + x^2 + x^3 + .... + x^n
+print('\n#6. Sum of series: 1 + x^1 + x^2 + x^3 + .... + x^n')
+n = 4
+x = 20
+total = 0
+print('Sum of series: ')
+for e in range(n+1):
+    num = x**e
+    print(f'{num},', end=' ')
+    total += num
+print('is:', total)
+
