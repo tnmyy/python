@@ -51,3 +51,13 @@ print(a[3:])
 # getting the original string "str = str[:n] + str[n:]"
 print('# getting the original string')
 print(a[:4]+a[4:])
+
+# custom jumping of indexes
+print('# custom jumping of indexes')
+a = 'python is a multi purpose language'
+print(a[0 : 35 : 2])
+
+# easy way to revese a string
+print('# easy way to revese a string')
+a = 'python is a multi purpose language'
+print(a[::-1])
