@@ -1,8 +1,8 @@
 # STRING PRACTICE QUESTIONS
-print('# STRING PRACTICE QUESTIONS')
-
-# BASED ON PYTHON STRING OPERATORS
-print('# BASED ON PYTHON STRING OPERATORS')
+##print('# STRING PRACTICE QUESTIONS')
+##
+### BASED ON PYTHON STRING OPERATORS
+##print('# BASED ON PYTHON STRING OPERATORS')
 ### 1. WAPP to input a an integer and check if it contains 0 in it.
 ##print('# 1. WAPP to input a an integer and check if it contains 0 in it.')
 ##n = int(input('Enter the integer: '))
