@@ -22,7 +22,7 @@ else:
     print("You have entered the user name in your code!")'''
 
 # 3. WAPP to find the number of vowels, consonants, numbers, spaces in a string
-print('# 3. WAPP to find the number of vowels, consonants, numbers, spaces in a string')
+'''print('# 3. WAPP to find the number of vowels, consonants, numbers, spaces in a string')
 vow = 'aeiou'
 conso = 'bcdfghjklmnpqrstvwxyz'
 num = '0123456789'
@@ -47,4 +47,14 @@ print('Vowels: ', vow_count)
 print('Consonants: ', conso_count)
 print('Numbers: ', num_count)
 print('Spaces: ', spc_count)
-print('Special Characters: ', special_count)
+print('Special Characters: ', special_count)'''
+
+# 4. WAPP to check whether a entered string is palindrome or not
+
+s = input('Enter the string: ')
+s = s.lower()
+s_ = s[::-1]
+if s == s_:
+    print('Yes it is a palindrome')
+else:
+    print('No it is not a palindrome')
