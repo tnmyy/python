@@ -1,7 +1,7 @@
 ### LOOP QUESTIONS
 ##print('# LOOP QUESTIONS')
 ##
-### WHILW LOOP
+### WHILE LOOP
 ##print('WHILE LOOP')
 ### 1. Print number from 0 to 10 (while loop)
 ##print('# 1. Print number from 0 to 10 (while loop)')
