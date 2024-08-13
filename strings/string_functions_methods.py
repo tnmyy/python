@@ -154,3 +154,61 @@ print(len(a.strip()))
 # 15.1 startswith()
 # Returns True if a given string starts with a given substring
 print('# 15.1 startswith()')
+a = 'jkl'
+print(a.startswith('j'))
+
+# 15.1 endswith()
+# Returns True if a given string ends with a given substring
+print('# 15.2 endswith()')
+a = 'jkl'
+print(a.endswith('l'))
+
+# 16. title()
+# Returns a title cased version of the string
+print('# 16. title()')
+a = 'PYTHON IS A PROGRAMMING LANGUAGE'
+print(a.title())
+a = 'python is a programming language'
+print(a.title())
+
+# 17. istitle()
+# Returns True if a given string follows title case
+print('# 17. istitle()')
+a = 'I am writing This text to Check istitle()'
+print(a.istitle())
+print(a.title().istitle())
+
+# 18. replace()
+# Replace the copy of the string, with the new replaced characters
+print('# 18. replace()')
+a = 'python'
+print(a.replace('p','J'))
+b = 'Python is a awesome coding language'
+print(b.replace('coding', 'programming'))
+
+# 19. join()
+# It joins a string/character after each member of the string iterator.
+print('# 19. join()')
+a = '1845'
+print('p'.join(a))
+
+print('HEY'.join(a))
+print(a.join('*******'))
+
+print(a.join(['Hey', 'Bro', 'Wasss', 'Up']))
+
+# 20. split()
+# It splits a string based on given string or character and returns a list containing split strings as members
+print('# 20. split()')
+# If no argument is given, it splits the given string on the basis of whitespaces
+a = 'I love python programming language'
+print(a.split())
+print(a.split(' '))
+print(a.split('p'))
+
+# 21. partition() // not in course
+# Splits the string at the first occurrence of separator and returns a TUPLE
+print('# 21. partition()')
+a = 'I love python programming language'
+print(a.partition('python'))
+print(a.partition('p'))

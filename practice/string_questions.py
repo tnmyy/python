@@ -49,12 +49,34 @@ print('Numbers: ', num_count)
 print('Spaces: ', spc_count)
 print('Special Characters: ', special_count)'''
 
-# 4. WAPP to check whether a entered string is palindrome or not
+# # 4. WAPP to check whether a entered string is palindrome or not
 
-s = input('Enter the string: ')
+# s = input('Enter the string: ')
+# s = s.lower()
+# s_ = s[::-1]
+# if s == s_:
+#     print('Yes it is a palindrome')
+# else:
+#     print('No it is not a palindrome')
+
+# 5. WAPP to count the number of alphabets in a string only if there are unique alphabets
+
+s = 'python 21'
+count = 0
+char_str = 'qwertyuiopasdfghjklzxcvbnm'
 s = s.lower()
-s_ = s[::-1]
-if s == s_:
-    print('Yes it is a palindrome')
-else:
-    print('No it is not a palindrome')
+for i in range(len(s)):
+    demo_char = s[i]
+    new_str = s[:i] + s[i+1:]
+    # Making logic for filtering out
+    if demo_char in new_str:
+        print('Characters are being repeated')
+        break
+    elif demo_char not in char_str:
+        count = count
+    elif demo_char not in new_str:
+        count += 1
+    else:
+        pass
+
+print('Number of characters: ', count)
