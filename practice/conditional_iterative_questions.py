@@ -114,23 +114,113 @@
 #    print(num, 'is not a prime number')
 # else:
 #    print(num, 'is a prime number')
+##<<<<<<< ALTER >>>>>>>>>
+# n = 6
+# count = 0
+# for x in range(1,n):
+#     if n%x == 0:
+#         count += 1
+# if count == 1:
+#     print('Prime number')
+# else:
+#     print('Composite number')
 
-# 8. WAPP to count the number of vowels and consonants in a given string.
-vowels = 'aeiou'
-consonants = 'bcdfghjklmnpqrstvqxyz'
-v_count = 0
-c_count = 0
-string = input('Enter you string: ')
-i = 0
-while i < len(string):
-    if string[i] in vowels:
-        v_count += 1
-    elif string[i] in consonants:
-        c_count += 1
-    else:
-        pass
-    i += 1
-print(v_count)
-print(c_count)
+# # 8. WAPP to count the number of vowels and consonants in a given string.
+# vowels = 'aeiou'
+# consonants = 'bcdfghjklmnpqrstvqxyz'
+# v_count = 0
+# c_count = 0
+# string = input('Enter you string: ')
+# i = 0
+# while i < len(string):
+#     if string[i] in vowels:
+#         v_count += 1
+#     elif string[i] in consonants:
+#         c_count += 1
+#     else:
+#         pass
+#     i += 1
+# print(v_count)
+# print(c_count)
 
-print(c_count)
+# print(c_count)
+
+# # 9. x + (x^2)/2! - (x^3)/3! .... (x^n)/n!
+# x = 4
+# n = 5
+# sign = -1
+# sum_series = x
+# i = 2
+# while i<=n:
+#     fct = 1
+#     for f in range(1, i+1):
+#         fct *= f
+#     nr = x**i * sign**i
+#     dr = fct
+#     fraction = nr/dr
+#     sum_series += fraction
+    
+#     i += 1
+# print(sum_series)
+
+# # 10. WAPP to check for a Armstrong number (a number equivalent to the sum of the cubes of its digits)
+# n = 407
+# num_sum = 0
+# for x in str(n):
+#     x = int(x)
+#     cube = x**3
+#     num_sum += cube
+    
+# if num_sum == n:
+#     print('Yes')
+# else:
+#     print('No')
+
+# # 11. WAPP to print Fibonacci series up to n terms
+# n = 6
+# first = 0
+# second = 1
+# print(first, ',', second, end=', ')
+
+# for x in range(2, n):
+#     next = first + second
+#     print(next, end=', ')
+#     first = second
+#     second = next
+# print()
+
+# # 12. WAPP to write the LCM and HCF of two integers
+# a = 10
+# b = 20
+# if a > b:
+#     small = b
+# else:
+#     small = a
+
+# lcm = hcf = 0
+
+# for x in range(1, small+1):
+#     if (a%x == 0) and (b%x==0):
+#         hcf = x
+#     lcm = (a*b)/hcf
+# print('HCF', hcf)
+# print('LCM', lcm)
+
+# 13. WAPP to break a 6 digit number into three 2 digit numbers
+n = 123456
+if 100000 < n > 999999:
+    print('Valid number please')
+else:
+    num1 = n%100
+    print('n1', num1)
+    int1 = n//100
+    print('i1', int1)
+
+    num2 = int1%100
+    print('n2', num2)
+    int2 = int1//100
+    print('int2', int2)
+
+    num3 = int2
+print('given number =', n)
+print('new numbers', num3, num2, num1)
