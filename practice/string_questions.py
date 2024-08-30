@@ -59,24 +59,96 @@ print('Special Characters: ', special_count)'''
 # else:
 #     print('No it is not a palindrome')
 
-# 5. WAPP to count the number of alphabets in a string only if there are unique alphabets
+# # 5. WAPP to count the number of alphabets in a string only if there are unique alphabets
 
-s = 'python 21'
-count = 0
-char_str = 'qwertyuiopasdfghjklzxcvbnm'
+# s = 'python 21'
+# count = 0
+# char_str = 'qwertyuiopasdfghjklzxcvbnm'
+# s = s.lower()
+# for i in range(len(s)):
+#     demo_char = s[i]
+#     new_str = s[:i] + s[i+1:]
+#     # Making logic for filtering out
+#     if demo_char in new_str:
+#         print('Characters are being repeated')
+#         break
+#     elif demo_char not in char_str:
+#         count = count
+#     elif demo_char not in new_str:
+#         count += 1
+#     else:
+#         pass
+
+# print('Number of characters: ', count)
+
+# # 6. WAPP that reads a line a substring. It should then display the number of occurrences of the given substring in the given line.
+
+# line = input('Enter the line: ')
+# substr = input('Enter the substring: ')
+
+# count = 0
+# end_ind = len(line)
+# start_ind = 0
+
+# while True:
+#     check = line.find(substr, start_ind, end_ind)
+#     if check != -1:
+#         count += 1
+#         start_ind = check + len(substr)
+#         print(line[start_ind:])
+#     else:
+#         break
+#     if start_ind >= end_ind:
+#         break
+# print(count)
+
+# # 7. WAPP that prints the fractional(decimal) part of a number
+# num = input('Enter the number with decimal part: ')
+# decimal = num.partition('.')[2]
+# print(decimal)
+
+# 8. WAPP that counts the number of distinct alphabets in a string
+s = 'Naman'
 s = s.lower()
-for i in range(len(s)):
-    demo_char = s[i]
-    new_str = s[:i] + s[i+1:]
-    # Making logic for filtering out
-    if demo_char in new_str:
-        print('Characters are being repeated')
-        break
-    elif demo_char not in char_str:
-        count = count
-    elif demo_char not in new_str:
-        count += 1
-    else:
-        pass
+dis_s = ''
 
-print('Number of characters: ', count)
+for char in s:
+    print(char)
+
+    if char.isalpha() and char not in dis_s:
+        dis_s+=char
+    
+count = len(dis_s)
+print('Distinct Characters: ', count)
+'''new_str = ''
+for x in s:
+    new_str += x
+    # for y in new_str:
+    #     print(y, end = '')
+    # print(new_str)
+    if x.isalpha():
+        count += 1
+    # print(new_str)
+print(count)'''
+
+'''new_str = ''
+for char in range(len(s)):
+    # print(s[char])
+    
+    new_str += s[char]
+
+    # for new_chr in range(len(new_str)):
+    #     print(new_chr, end='')
+    # print()
+    print(new_str)
+    
+    if s[char].isalpha()
+        count += 1'''
+number = int(input("Enter a number: "))
+for i in range(number, number + 10):
+    print(f"\nMultiplication table for {i}:")
+    j = 1
+    while j <= 10:
+        print(f"{i} x {j} = {i * j}")
+        j+=1
+        
