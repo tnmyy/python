@@ -206,21 +206,59 @@
 # print('HCF', hcf)
 # print('LCM', lcm)
 
-# 13. WAPP to break a 6 digit number into three 2 digit numbers
-n = 123456
-if 100000 < n > 999999:
-    print('Valid number please')
-else:
-    num1 = n%100
-    print('n1', num1)
-    int1 = n//100
-    print('i1', int1)
+# # 13. WAPP to break a 6 digit number into three 2 digit numbers
+# n = 123456
+# if 100000 < n > 999999:
+#     print('Valid number please')
+# else:
+#     num1 = n%100
+#     print('n1', num1)
+#     int1 = n//100
+#     print('i1', int1)
 
-    num2 = int1%100
-    print('n2', num2)
-    int2 = int1//100
-    print('int2', int2)
+#     num2 = int1%100
+#     print('n2', num2)
+#     int2 = int1//100
+#     print('int2', int2)
 
-    num3 = int2
-print('given number =', n)
-print('new numbers', num3, num2, num1)
+#     num3 = int2
+# print('given number =', n)
+# print('new numbers', num3, num2, num1)
+
+# # 14. Real Armstrong numbers
+# n = 1634
+# n_str = str(n)
+# len_str = len(n_str)
+# check = 0
+
+# for x in n_str:
+#     x = int(x)
+#     power = x**len_str
+#     check += power
+# if check == n:
+#     print('Yess')
+# else:
+#     print('No')
+
+# n = 5
+# for i in range(n):
+#     number = 1
+#     for j in range(i + 1):
+#         print(number, end=" ")
+#         number = number * (i - j) // (j + 1)
+#     print()
+
+# 15. WAPP to read an integer > 1000 and reverse the number
+n = 12345
+if n<1000 or type(n)!=type(1):
+    print('Enter an integer>1000')
+digit = n
+num = None
+print('New num =', end=' ')
+while True:
+    num = digit%10
+    digit = digit//10
+    if num == 0:
+        break
+    print(num, end='')
+    

@@ -124,9 +124,9 @@ print()
 print('# PATTERN 8')
 n = 5
 for row in range(n):
-    for emp in range(row):
+    for emp in range(row, 4):
         print(' ', end=' ')
-    for col in range(row, 5):
+    for col in range(row+1):
         print('*', end=' ')
     print()
 
