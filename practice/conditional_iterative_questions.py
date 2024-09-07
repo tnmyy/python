@@ -272,26 +272,33 @@
 # last = int(n[ln-1])**ln
 # print(first, '\t', last)
 
-# 17. WAPP to find the smallest and second smallest from the 10 numbers input
+# # 17. WAPP to find the smallest and second smallest from the 10 numbers input
 
-chhota = sabsechhota = 0
-for x in range(5):
-    n = float(input('Enter the number: '))
+# chhota = sabsechhota = 0
+# for x in range(5):
+#     n = float(input('Enter the number: '))
     
-    if x == 0: # to initialise the first value and then compare accordingly
-        chhota = n
-    elif x == 1: # to initialise the second input
-        if n <= chhota:
-            sabsechhota = n
-        else:
-            sabsechhota = chhota
-            chhota = n
-    else:
-        if n < sabsechhota:
-            chhota = sabsechhota
-            sabsechhota = n
-        elif n < chhota:
-            sabsechhota = n
+#     if x == 0: # to initialise the first value and then compare accordingly
+#         chhota = n
+#     elif x == 1: # to initialise the second input
+#         if n <= chhota:
+#             sabsechhota = n
+#         else:
+#             sabsechhota = chhota
+#             chhota = n
+#     else:
+#         if n < sabsechhota:
+#             chhota = sabsechhota
+#             sabsechhota = n
+#         elif n < chhota:
+#             sabsechhota = n
             
-print('Smaller: ', chhota)
-print('Smallest: ', sabsechhota)
+# print('Smaller: ', chhota)
+# print('Smallest: ', sabsechhota)
+
+# 18. WAPP to print divisors of a number
+n = 10
+print('divisors of', n, 'are: ')
+for x in range(1, n+1):
+    if n%x==0:
+        print(x, end=' ')
