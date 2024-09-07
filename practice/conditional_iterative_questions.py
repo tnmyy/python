@@ -248,17 +248,50 @@
 #         number = number * (i - j) // (j + 1)
 #     print()
 
-# 15. WAPP to read an integer > 1000 and reverse the number
-n = 12345
-if n<1000 or type(n)!=type(1):
-    print('Enter an integer>1000')
-digit = n
-num = None
-print('New num =', end=' ')
-while True:
-    num = digit%10
-    digit = digit//10
-    if num == 0:
-        break
-    print(num, end='')
+# # 15. WAPP to read an integer > 1000 and reverse the number
+# n = 12345
+# if n<1000 or type(n)!=type(1):
+#     print('Enter an integer>1000')
+# digit = n
+# num = None
+# print('New num =', end=' ')
+# while True:
+#     num = digit%10
+#     digit = digit//10
+#     if num == 0:
+#         break
+#     print(num, end='')
+
+# # 16. WAPP to input a number and then raise the first and the last digit of the number to the number of digits in the number
+
+# n = 19892
+# n = str(n)
+# ln = len(n)
+
+# first = int(n[0])**ln
+# last = int(n[ln-1])**ln
+# print(first, '\t', last)
+
+# 17. WAPP to find the smallest and second smallest from the 10 numbers input
+
+chhota = sabsechhota = 0
+for x in range(5):
+    n = float(input('Enter the number: '))
     
+    if x == 0: # to initialise the first value and then compare accordingly
+        chhota = n
+    elif x == 1: # to initialise the second input
+        if n <= chhota:
+            sabsechhota = n
+        else:
+            sabsechhota = chhota
+            chhota = n
+    else:
+        if n < sabsechhota:
+            chhota = sabsechhota
+            sabsechhota = n
+        elif n < chhota:
+            sabsechhota = n
+            
+print('Smaller: ', chhota)
+print('Smallest: ', sabsechhota)
