@@ -13,16 +13,16 @@
 ##    print('No, there is no 0 in',n)
 
 # 2. WAPP which asks the user to enter the username and a code. Check that username is not present in code
-'''print('# 2. WAPP which asks the user to enter the username and a code. Check that username is not present in code')
+"""print('# 2. WAPP which asks the user to enter the username and a code. Check that username is not present in code')
 user_name = input("Enter the user name: ")
 code = input("Enter the code: ")
 if user_name not in code:
     print('The user name: ', user_name, '\nThe code:', code)
 else:
-    print("You have entered the user name in your code!")'''
+    print("You have entered the user name in your code!")"""
 
 # 3. WAPP to find the number of vowels, consonants, numbers, spaces in a string
-'''print('# 3. WAPP to find the number of vowels, consonants, numbers, spaces in a string')
+"""print('# 3. WAPP to find the number of vowels, consonants, numbers, spaces in a string')
 vow = 'aeiou'
 conso = 'bcdfghjklmnpqrstvwxyz'
 num = '0123456789'
@@ -47,7 +47,7 @@ print('Vowels: ', vow_count)
 print('Consonants: ', conso_count)
 print('Numbers: ', num_count)
 print('Spaces: ', spc_count)
-print('Special Characters: ', special_count)'''
+print('Special Characters: ', special_count)"""
 
 # # 4. WAPP to check whether a entered string is palindrome or not
 
@@ -107,48 +107,71 @@ print('Special Characters: ', special_count)'''
 # decimal = num.partition('.')[2]
 # print(decimal)
 
-# 8. WAPP that counts the number of distinct alphabets in a string
-s = 'Naman'
-s = s.lower()
-dis_s = ''
+# # 8. WAPP that counts the number of distinct alphabets in a string
+# s = 'Naman'
+# s = s.lower()
+# dis_s = ''
 
-for char in s:
-    print(char)
+# for char in s:
+#     print(char)
 
-    if char.isalpha() and char not in dis_s:
-        dis_s+=char
-    
-count = len(dis_s)
-print('Distinct Characters: ', count)
-'''new_str = ''
-for x in s:
-    new_str += x
-    # for y in new_str:
-    #     print(y, end = '')
-    # print(new_str)
-    if x.isalpha():
-        count += 1
-    # print(new_str)
-print(count)'''
+#     if char.isalpha() and char not in dis_s:
+#         dis_s+=char
 
-'''new_str = ''
-for char in range(len(s)):
-    # print(s[char])
-    
-    new_str += s[char]
+# count = len(dis_s)
+# print('Distinct Characters: ', count)
+# '''new_str = ''
+# for x in s:
+#     new_str += x
+#     # for y in new_str:
+#     #     print(y, end = '')
+#     # print(new_str)
+#     if x.isalpha():
+#         count += 1
+#     # print(new_str)
+# print(count)'''
 
-    # for new_chr in range(len(new_str)):
-    #     print(new_chr, end='')
-    # print()
-    print(new_str)
-    
-    if s[char].isalpha()
-        count += 1'''
-number = int(input("Enter a number: "))
-for i in range(number, number + 10):
-    print(f"\nMultiplication table for {i}:")
-    j = 1
-    while j <= 10:
-        print(f"{i} x {j} = {i * j}")
-        j+=1
-        
+# '''new_str = ''
+# for char in range(len(s)):
+#     # print(s[char])
+
+#     new_str += s[char]
+
+#     # for new_chr in range(len(new_str)):
+#     #     print(new_chr, end='')
+#     # print()
+#     print(new_str)
+
+#     if s[char].isalpha()
+#         count += 1'''
+# number = int(input("Enter a number: "))
+# for i in range(number, number + 10):
+#     print(f"\nMultiplication table for {i}:")
+#     j = 1
+#     while j <= 10:
+#         print(f"{i} x {j} = {i * j}")
+#         j+=1
+
+# # 9. WAPP that takes a string with multiple words and then capitalizes the first letter of each word and forms a new string out of it.
+# string = "this is a string made for just testing purposes, so just simply do not take it seriously"
+# sep_str = string.split(" ")
+# new_str = ""
+# for x in range(len(sep_str)):
+#     new_str += sep_str[x][0].upper()
+# print(new_str)
+
+# 10. WAPP that whether reads a string and checks whether it is a palindrome string or not
+# WITHOUT USING SLICING
+string = "NAMAN"
+string = string.lower()
+rev = -1
+start = 0
+
+for x in range(len(string)):
+    if string[start] == string[rev]:
+        start += 1
+        rev -= 1
+    else:
+        print(string, "is not a palindrome")
+        break
+print(string, "is a palindrome")
