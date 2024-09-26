@@ -296,9 +296,19 @@
 # print('Smaller: ', chhota)
 # print('Smallest: ', sabsechhota)
 
-# 18. WAPP to print divisors of a number
+# # 18. WAPP to print divisors of a number
+# n = 10
+# print('divisors of', n, 'are: ')
+# for x in range(1, n+1):
+#     if n%x==0:
+#         div = x
+#         print(x, end=' ')
+
+# 19. WAPP to find the sum of the following series:
+# 1 + (1+2) + (!+2+3) .... (1+2+3+4+....n)
 n = 10
-print('divisors of', n, 'are: ')
+Sum = 0
 for x in range(1, n+1):
-    if n%x==0:
-        print(x, end=' ')
+    for y in range(1, x+1):
+        Sum += y
+print('Sum', Sum)
