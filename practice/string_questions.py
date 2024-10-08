@@ -160,18 +160,67 @@ print('Special Characters: ', special_count)"""
 #     new_str += sep_str[x][0].upper()
 # print(new_str)
 
-# 10. WAPP that whether reads a string and checks whether it is a palindrome string or not
-# WITHOUT USING SLICING
-string = "NAMAN"
-string = string.lower()
-rev = -1
-start = 0
+# # 10. WAPP that whether reads a string and checks whether it is a palindrome string or not
+# # WITHOUT USING SLICING
+# string = "NAMAN"
+# string = string.lower()
+# rev = -1
+# start = 0
 
-for x in range(len(string)):
-    if string[start] == string[rev]:
-        start += 1
-        rev -= 1
-    else:
-        print(string, "is not a palindrome")
-        break
-print(string, "is a palindrome")
+# for x in range(len(string)):
+#     if string[start] == string[rev]:
+#         start += 1
+#         rev -= 1
+#     else:
+#         print(string, "is not a palindrome")
+#         break
+# print(string, "is a palindrome")
+
+# # 11. WAPP that reads a string and then makes every other letter capital and then print the string
+# a = "programming"
+# new_str = ""
+# for x in range(len(a)):
+#     if x % 2 == 0:
+#         new_str += a[x]
+#     else:
+#         new_str += a[x].upper()
+# print(new_str)
+
+# # 12. WAPP that reads a email address and then prints the domain name i.e. '@xyz.abc'
+# email = "google@google.com"
+# index = None
+# for x in range(len(email)):
+#     if email[x] == "@":
+#         index = x
+#         break
+# print(email[index + 1 :])
+
+# # 13. WAPP that reads a string 's' and any character 'c' and then prints the location of every occurrence of 'c' in 's'
+# s = "This is the string which I am going to use."
+# c = "i"
+# for i in range(len(s)):
+#     if s[i] == c:
+#         print(i, end=" ")
+
+# # 14. WAPP that removes all the special characters from a string
+# s = "“rybIk*T! aFhiJ+e$g &n}R2<wu_X 3f(:lQ)W;M#O ?Y,[-m.Po%L_4 DZ@#-%:  (>B=^).Lz|<wW guke}h K12fq6 8A0PiFm] x?XHlY,54M 78rZQnyY._ q@*"
+# new_s = ""
+# for i in range(len(s)):
+#     if s[i].isalnum() or s[i].isspace():
+#         new_s += s[i]
+# print(new_s)
+
+# # 15. WAPP that prints each word of a sentence in new line and also prints the number of words in the sentence
+# s = "This is the sentence which I am going to use"
+# s = s.split()
+# for x in s:
+#     print(x)
+# print("The number of characters in the sentence is: ", len(s))
+
+# # 16. WAPP that prints each word of a sentence along it's individual length
+# s = "This is the sentence which I am going to use"
+# s = s.split()
+# for x in s:
+#     print(x, "(", len(x), ")")
+
+# 17. WAPP that reads a string a displays the longest substring of the given string having just the consonants
