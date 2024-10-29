@@ -46,3 +46,13 @@ l = ["one", "two", "three"]
 print(l)
 l[0:2] = ["A"]
 print(l)
+
+# COPYING A LIST
+a = [1, 2, 3]
+b = a  # this is not a copy
+
+b = list(a)
+# OR
+b = a.copy()
+# OR
+b = a[:]
