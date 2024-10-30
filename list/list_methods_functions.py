@@ -149,3 +149,12 @@ l = [1, 2, 3, 2, 3, 4, 1, 3, 4, 5]
 print(min(l))
 print(max(l))
 print(sum(l))
+
+# 15. del list[start:stop] OR [index] STATEMENT
+print("# 15. del list[]")
+l = [1, 2, 3, 2, 3, 4, 1, 3, 4, 5]
+print(l)
+del l[4]
+print(l)
+del l[:1]
+print(l)
