@@ -46,6 +46,9 @@ l = ["one", "two", "three"]
 print(l)
 l[0:2] = ["A"]
 print(l)
+# OR
+l[0:2] = "A"
+print(l)
 
 # COPYING A LIST
 a = [1, 2, 3]
