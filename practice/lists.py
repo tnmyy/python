@@ -20,11 +20,29 @@
 
 # print(f"slice 1: {lis1}\nSum: {sum1}\nSlice 2: {lis2}\nAverage: {avg}")
 
-# 3. WAPP to create a copy of a list. In the list's copy, add 10 to its first and last elements. Then display the lists
-l1 = [11, 2, 3, 5, 1, 212, 20, 35, 63, 45, 20, 36]
-l2 = l1.copy()
+# # 3. WAPP to create a copy of a list. In the list's copy, add 10 to its first and last elements. Then display the lists
+# l1 = [11, 2, 3, 5, 1, 212, 20, 35, 63, 45, 20, 36]
+# l2 = l1.copy()
 
-l2[0] += 10
-l2[-1] += 10
+# l2[0] += 10
+# l2[-1] += 10
 
-print(l2)
+# print(l2)
+
+# 4. WAPP the inputs a list, replicates it twice and then prints the sorted list in ascending and descending orders
+
+n = int(input("Enter the number of elements you want in the list: "))
+i = 0
+lis = []
+while i < n:
+    elem = int(input("Enter the integral list elements: "))
+    lis.append(elem)
+    i += 1
+
+lis1 = lis.copy()
+lis1.sort()
+lis2 = lis.copy()
+lis1.sort(reverse=True)
+
+print(lis1)
+print(lis2)

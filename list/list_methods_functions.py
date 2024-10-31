@@ -64,6 +64,7 @@
 # # 7. pop(index)
 # # used to remove an item from the list
 # # pop() ==> last item removed
+# # returns the removed element
 # print("# 7. pop(index)")
 # l = [1, 2, 3, 4, 5]
 # l.pop(-5)
