@@ -63,18 +63,34 @@
 # avg = sum(lis) / len(lis)
 # print("Average of list: ", lis, "is: ", avg)
 
-# 7. WAPP to search for an element in a given list
-lis = eval(input("Enter your list: "))
-search = eval(input("Enter what do you want to search: "))
-ind = -1
+# # 7. WAPP to search for an element in a given list
+# lis = eval(input("Enter your list: "))
+# search = eval(input("Enter what do you want to search: "))
+# ind = -1
+# if type(lis) == type([]):
+#     for i in lis:
+#         if i == search:
+#             ind = lis.index(i)
+
+# else:
+#     print("Enter a valid list please!!")
+# if ind >= 0:
+#     print(search, "is found at", ind, "index")
+# else:
+#     print("Cannot find", search, "in", lis)
+
+# 8. WAPP to count the frequency of a given element in a list
+lis = eval(input("Enter a list: "))
+elem = eval(input("Enter the element to be searched: "))
+count = 0
 if type(lis) == type([]):
     for i in lis:
-        if i == search:
-            ind = lis.index(i)
+        if i == elem:
+            count += 1
+else:
+    print("Enter a valid list! ")
 
+if count > 0:
+    print(elem, "occurred", count, "times in the list: ", lis)
 else:
-    print("Enter a valid list please!!")
-if ind >= 0:
-    print(search, "is found at", ind, "index")
-else:
-    print("Cannot find", search, "in", lis)
+    print("Cannot find", elem, "in", lis)
