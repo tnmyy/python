@@ -29,20 +29,31 @@
 
 # print(l2)
 
-# 4. WAPP the inputs a list, replicates it twice and then prints the sorted list in ascending and descending orders
+# # 4. WAPP the inputs a list, replicates it twice and then prints the sorted list in ascending and descending orders
 
-n = int(input("Enter the number of elements you want in the list: "))
-i = 0
-lis = []
-while i < n:
-    elem = int(input("Enter the integral list elements: "))
-    lis.append(elem)
-    i += 1
+# n = int(input("Enter the number of elements you want in the list: "))
+# i = 0
+# lis = []
+# while i < n:
+#     elem = int(input("Enter the integral list elements: "))
+#     lis.append(elem)
+#     i += 1
 
-lis1 = lis.copy()
-lis1.sort()
-lis2 = lis.copy()
-lis1.sort(reverse=True)
+# lis1 = lis.copy()
+# lis1.sort()
+# lis2 = lis.copy()
+# lis1.sort(reverse=True)
 
-print(lis1)
-print(lis2)
+# print(lis1)
+# print(lis2)
+
+# 5. WAPP to find the minimum element from a list of numbers and also print it's index
+elem = eval(input("Enter a list of numbers: "))
+
+if type(elem) == type([]):
+    minimum = min(elem)
+    ind = elem.index(minimum)
+    print("List: ", elem)
+    print("Minimum element is: ", minimum, "it's index is: ", ind)
+else:
+    print("Enter a valid list!")
