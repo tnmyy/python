@@ -47,13 +47,18 @@
 # print(lis1)
 # print(lis2)
 
-# 5. WAPP to find the minimum element from a list of numbers and also print it's index
-elem = eval(input("Enter a list of numbers: "))
+# # 5. WAPP to find the minimum element from a list of numbers and also print it's index
+# elem = eval(input("Enter a list of numbers: "))
 
-if type(elem) == type([]):
-    minimum = min(elem)
-    ind = elem.index(minimum)
-    print("List: ", elem)
-    print("Minimum element is: ", minimum, "it's index is: ", ind)
-else:
-    print("Enter a valid list!")
+# if type(elem) == type([]):
+#     minimum = min(elem)
+#     ind = elem.index(minimum)
+#     print("List: ", elem)
+#     print("Minimum element is: ", minimum, "it's index is: ", ind)
+# else:
+#     print("Enter a valid list!")
+
+# 6. WAPP to calculate the mean of a given list of numbers
+lis = [11, 2, 3, 5, 1, 212, 20, 35, 63, 45, 20, 36]
+avg = sum(lis) / len(lis)
+print("Average of list: ", lis, "is: ", avg)
