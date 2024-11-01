@@ -58,7 +58,23 @@
 # else:
 #     print("Enter a valid list!")
 
-# 6. WAPP to calculate the mean of a given list of numbers
-lis = [11, 2, 3, 5, 1, 212, 20, 35, 63, 45, 20, 36]
-avg = sum(lis) / len(lis)
-print("Average of list: ", lis, "is: ", avg)
+# # 6. WAPP to calculate the mean of a given list of numbers
+# lis = [11, 2, 3, 5, 1, 212, 20, 35, 63, 45, 20, 36]
+# avg = sum(lis) / len(lis)
+# print("Average of list: ", lis, "is: ", avg)
+
+# 7. WAPP to search for an element in a given list
+lis = eval(input("Enter your list: "))
+search = eval(input("Enter what do you want to search: "))
+ind = -1
+if type(lis) == type([]):
+    for i in lis:
+        if i == search:
+            ind = lis.index(i)
+
+else:
+    print("Enter a valid list please!!")
+if ind >= 0:
+    print(search, "is found at", ind, "index")
+else:
+    print("Cannot find", search, "in", lis)
