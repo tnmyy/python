@@ -79,18 +79,30 @@
 # else:
 #     print("Cannot find", search, "in", lis)
 
-# 8. WAPP to count the frequency of a given element in a list
-lis = eval(input("Enter a list: "))
-elem = eval(input("Enter the element to be searched: "))
-count = 0
-if type(lis) == type([]):
-    for i in lis:
-        if i == elem:
-            count += 1
-else:
-    print("Enter a valid list! ")
+# # 8. WAPP to count the frequency of a given element in a list
+# lis = eval(input("Enter a list: "))
+# elem = eval(input("Enter the element to be searched: "))
+# count = 0
+# if type(lis) == type([]):
+#     for i in lis:
+#         if i == elem:
+#             count += 1
+# else:
+#     print("Enter a valid list! ")
 
-if count > 0:
-    print(elem, "occurred", count, "times in the list: ", lis)
-else:
-    print("Cannot find", elem, "in", lis)
+# if count > 0:
+#     print(elem, "occurred", count, "times in the list: ", lis)
+# else:
+#     print("Cannot find", elem, "in", lis)
+
+
+# 9. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
+lis = [1, 2, 3, 1, 2, 4]
+lis_copy = lis
+uni_lis = []
+dup_lis = []
+
+for i in range(len(lis_copy)):
+    for j in range(len(lis_copy)):
+        if lis_copy[j] == lis_copy[i]:
+            print(f"{lis_copy[i]},{lis_copy[j]}, {i},{j}")
