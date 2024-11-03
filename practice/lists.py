@@ -96,13 +96,35 @@
 #     print("Cannot find", elem, "in", lis)
 
 
-# 9. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
-lis = [1, 2, 3, 1, 2, 4]
-lis_copy = lis
-uni_lis = []
-dup_lis = []
+# 9. WAPP to check whether the numerically maximum element lies either in the first half or in the second half or in the middle of the list
+lis = [0, 1, 1, 7, 2, 3, 1, 2]
+len_lis = len(lis) / 2
+max_elem = max(lis)
+ind_max = lis.index(max_elem)
 
-for i in range(len(lis_copy)):
-    for j in range(len(lis_copy)):
-        if lis_copy[j] == lis_copy[i]:
-            print(f"{lis_copy[i]},{lis_copy[j]}, {i},{j}")
+if type(len_lis) == type(1):
+    if ind_max < len_lis:
+        print("First Half")
+    elif ind_max >= len_lis:
+        print("Second Half")
+else:
+    len_lis = (len(lis) - 1) / 2
+    if ind_max < len_lis:
+        print("First Half")
+    elif ind_max > len_lis:
+        print("Second Half")
+    else:
+        print("Middle")
+
+
+"""# # 9. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
+# lis = [1, 2, 3, 1, 2, 4]
+# lis_copy = lis
+# uni_lis = []
+# dup_lis = []
+
+# for i in range(len(lis_copy)):
+#     for j in range(len(lis_copy)):
+#         if lis_copy[j] == lis_copy[i]:
+#             print(f"{lis_copy[i]},{lis_copy[j]}, {i},{j}")
+"""
