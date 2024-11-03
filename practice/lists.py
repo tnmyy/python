@@ -115,25 +115,32 @@
 #     else:
 #         print("Middle")
 
-# 10. WAPP that inputs 2 lists, and displays the maximum elements along with it's index and the list from which it is
-l1 = [1, 2, 3, 1, 2, 2, 2, 9, 4]
-l2 = [6, 7, 8, 9]
-max_l1 = max(l1)
-i_max_l1 = l1.index(max_l1)
-max_l2 = max(l2)
-i_max_l2 = l2.index(max_l2)
+# # 10. WAPP that displays the maximum elements along with it's index and the list from which it is
+# l1 = [1, 2, 3, 1, 2, 2, 2, 9, 4]
+# l2 = [6, 7, 8, 9]
+# max_l1 = max(l1)
+# i_max_l1 = l1.index(max_l1)
+# max_l2 = max(l2)
+# i_max_l2 = l2.index(max_l2)
 
-if max_l1 > max_l2:
-    max_elem = max_l1
-    print(f"The maximum element is from the list {l1} and its index is {i_max_l1}")
-elif max_l2 > max_l1:
-    max_elem = max_l2
-    print(f"The maximum element is from the list {l2} and its index is {i_max_l2}")
-else:
-    print(
-        f"The maximum element is common in both the lists.\nIt's index in {l1} is {i_max_l1}\nand it's index in {l2} is {i_max_l2}"
-    )
+# if max_l1 > max_l2:
+#     max_elem = max_l1
+#     print(f"The maximum element is from the list {l1} and its index is {i_max_l1}")
+# elif max_l2 > max_l1:
+#     max_elem = max_l2
+#     print(f"The maximum element is from the list {l2} and its index is {i_max_l2}")
+# else:
+#     print(
+#         f"The maximum element is common in both the lists.\nIt's index in {l1} is {i_max_l1}\nand it's index in {l2} is {i_max_l2}"
+#     )
 
+# 11. WAPP to swap the even and odd elements of a list with each other
+lis = [1, 2, 3, 4, 5, 6]
+n_lis = []
+for i in range(0, len(lis), 2):
+    temp_lis = [lis[i + 1], lis[i]]
+    n_lis.extend(temp_lis)
+print(n_lis)
 
 """# # 9. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
 # lis = [1, 2, 3, 1, 2, 4]
