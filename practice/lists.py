@@ -134,22 +134,25 @@
 #         f"The maximum element is common in both the lists.\nIt's index in {l1} is {i_max_l1}\nand it's index in {l2} is {i_max_l2}"
 #     )
 
-# 11. WAPP to swap the even and odd elements of a list with each other
-lis = [1, 2, 3, 4, 5, 6]
-n_lis = []
-for i in range(0, len(lis), 2):
-    temp_lis = [lis[i + 1], lis[i]]
-    n_lis.extend(temp_lis)
-print(n_lis)
+# # 11. WAPP to swap the even and odd elements of a list with each other
+# lis = [1, 2, 3, 4, 5, 6]
+# n_lis = []
+# for i in range(0, len(lis), 2):
+#     temp_lis = [lis[i + 1], lis[i]]
+#     n_lis.extend(temp_lis)
+# print(n_lis)
 
-"""# # 9. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
-# lis = [1, 2, 3, 1, 2, 4]
-# lis_copy = lis
-# uni_lis = []
-# dup_lis = []
+# 12. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
+lis = [1, 2, 3, 12, 2]
+lis_copy = lis
+uni_lis = []
+dup_lis = []
 
-# for i in range(len(lis_copy)):
-#     for j in range(len(lis_copy)):
-#         if lis_copy[j] == lis_copy[i]:
-#             print(f"{lis_copy[i]},{lis_copy[j]}, {i},{j}")
-"""
+lis_copy = lis
+for x in lis_copy:
+    if lis_copy.count(x) > 1 and x not in dup_lis:
+        dup_lis.append(x)
+    elif lis_copy.count(x) == 1:
+        uni_lis.append(x)
+print("Duplicate elements: ", dup_lis)
+print("Unique elements: ", uni_lis)
