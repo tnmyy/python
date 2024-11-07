@@ -186,9 +186,20 @@
 # print("Max num:", max(cub_lis))
 # print("Min num:", min(cub_lis))
 
-# 14. WAPP to find the second largest number of a list of numbers
-lis = [153, 407, 456, 508, 342, 3413, 370, 9878]
-first_max = max(lis)
-lis.remove(first_max)
-second_max = max(lis)
-print("The second largest number in:", lis.append(first_max), "is", second_max)
+# # 14. WAPP to find the second largest number of a list of numbers
+# lis = [153, 407, 456, 508, 342, 3413, 370, 9878]
+# first_max = max(lis)
+# lis.remove(first_max)
+# second_max = max(lis)
+# print("The second largest number in:", lis.append(first_max), "is", second_max)
+
+# 15. WAPP to remove all the occurrence of an element in a list
+lis = [1, 2, 3, 4, 5, 6, 2, 3, 4, 2, 4, 3, 2]
+i = 0
+rem = 2
+print("Before", lis)
+x = lis.count(rem)
+while i < x:
+    lis.remove(rem)
+    i += 1
+print("After", lis)
