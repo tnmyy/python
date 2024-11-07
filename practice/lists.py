@@ -144,15 +144,28 @@
 
 # 12. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
 lis = [1, 2, 3, 12, 2]
-lis_copy = lis
 uni_lis = []
 dup_lis = []
 
-lis_copy = lis
-for x in lis_copy:
-    if lis_copy.count(x) > 1 and x not in dup_lis:
+parsed_elem = []
+for x in lis:
+    count = lis.count(x)
+    if x not in parsed_elem:
+        print("Frequency of", x, "is", count)
+        parsed_elem.append(x)
+
+    if count > 1 and x not in dup_lis:
         dup_lis.append(x)
-    elif lis_copy.count(x) == 1:
+    else:
         uni_lis.append(x)
 print("Duplicate elements: ", dup_lis)
 print("Unique elements: ", uni_lis)
+# lis_copy = lis.copy()
+# lis_copy = lis
+# for x in lis_copy:
+#     if lis_copy.count(x) > 1 and x not in dup_lis:
+#         dup_lis.append(x)
+#     elif lis_copy.count(x) == 1:
+#         uni_lis.append(x)
+# print("Duplicate elements: ", dup_lis)
+# print("Unique elements: ", uni_lis)
