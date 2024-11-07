@@ -170,18 +170,25 @@
 # # print("Duplicate elements: ", dup_lis)
 # # print("Unique elements: ", uni_lis)
 
-# 13. WAPP to test if a number in a list is equal to the sum of the cubes of its digits. Find the smallest and largest such number from the given list of numbers
-lis = [153, 407, 456, 508, 342, 3413, 370, 9878]
-cub_lis = []
+# # 13. WAPP to test if a number in a list is equal to the sum of the cubes of its digits. Find the smallest and largest such number from the given list of numbers
+# lis = [153, 407, 456, 508, 342, 3413, 370, 9878]
+# cub_lis = []
 
-for i in lis:
-    num = str(i)
-    total = 0
-    for j in num:
-        j = int(j)
-        total += j**3
-    if total == i:
-        cub_lis.append(i)
-print(cub_lis)
-print("Max num:", max(cub_lis))
-print("Min num:", min(cub_lis))
+# for i in lis:
+#     num = str(i)
+#     total = 0
+#     for j in num:
+#         j = int(j)
+#         total += j**3
+#     if total == i:
+#         cub_lis.append(i)
+# print(cub_lis)
+# print("Max num:", max(cub_lis))
+# print("Min num:", min(cub_lis))
+
+# 14. WAPP to find the second largest number of a list of numbers
+lis = [153, 407, 456, 508, 342, 3413, 370, 9878]
+first_max = max(lis)
+lis.remove(first_max)
+second_max = max(lis)
+print("The second largest number in:", lis.append(first_max), "is", second_max)
