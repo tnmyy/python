@@ -142,30 +142,46 @@
 #     n_lis.extend(temp_lis)
 # print(n_lis)
 
-# 12. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
-lis = [1, 2, 3, 12, 2]
-uni_lis = []
-dup_lis = []
+# # 12. WAPP to print the frequencies of all the elements in a list and then print the unique and duplicate elements of the list as a list
+# lis = [1, 2, 3, 12, 2]
+# uni_lis = []
+# dup_lis = []
 
-parsed_elem = []
-for x in lis:
-    count = lis.count(x)
-    if x not in parsed_elem:
-        print("Frequency of", x, "is", count)
-        parsed_elem.append(x)
+# parsed_elem = []
+# for x in lis:
+#     count = lis.count(x)
+#     if x not in parsed_elem:
+#         print("Frequency of", x, "is", count)
+#         parsed_elem.append(x)
 
-    if count > 1 and x not in dup_lis:
-        dup_lis.append(x)
-    else:
-        uni_lis.append(x)
-print("Duplicate elements: ", dup_lis)
-print("Unique elements: ", uni_lis)
-# lis_copy = lis.copy()
-# lis_copy = lis
-# for x in lis_copy:
-#     if lis_copy.count(x) > 1 and x not in dup_lis:
+#     if count > 1 and x not in dup_lis:
 #         dup_lis.append(x)
-#     elif lis_copy.count(x) == 1:
+#     else:
 #         uni_lis.append(x)
 # print("Duplicate elements: ", dup_lis)
 # print("Unique elements: ", uni_lis)
+# # lis_copy = lis.copy()
+# # lis_copy = lis
+# # for x in lis_copy:
+# #     if lis_copy.count(x) > 1 and x not in dup_lis:
+# #         dup_lis.append(x)
+# #     elif lis_copy.count(x) == 1:
+# #         uni_lis.append(x)
+# # print("Duplicate elements: ", dup_lis)
+# # print("Unique elements: ", uni_lis)
+
+# 13. WAPP to test if a number in a list is equal to the sum of the cubes of its digits. Find the smallest and largest such number from the given list of numbers
+lis = [153, 407, 456, 508, 342, 3413, 370, 9878]
+cub_lis = []
+
+for i in lis:
+    num = str(i)
+    total = 0
+    for j in num:
+        j = int(j)
+        total += j**3
+    if total == i:
+        cub_lis.append(i)
+print(cub_lis)
+print("Max num:", max(cub_lis))
+print("Min num:", min(cub_lis))
