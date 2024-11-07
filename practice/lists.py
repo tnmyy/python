@@ -193,13 +193,28 @@
 # second_max = max(lis)
 # print("The second largest number in:", lis.append(first_max), "is", second_max)
 
-# 15. WAPP to remove all the occurrence of an element in a list
-lis = [1, 2, 3, 4, 5, 6, 2, 3, 4, 2, 4, 3, 2]
-i = 0
-rem = 2
-print("Before", lis)
-x = lis.count(rem)
-while i < x:
-    lis.remove(rem)
-    i += 1
-print("After", lis)
+# # 15. WAPP to remove all the occurrence of an element in a list
+# lis = [1, 2, 3, 4, 5, 6, 2, 3, 4, 2, 4, 3, 2]
+# i = 0
+# rem = 2
+# print("Before", lis)
+# x = lis.count(rem)
+# while i < x:
+#     lis.remove(rem)
+#     i += 1
+# print("After", lis)
+
+# 16. WAPP to read a list of n integers and find their median (middle value)
+lis = [36, 3, 63, 5, 41, 31, 4, 56, 77, 8, 24, 4, 32, 43, 44, 52]
+lis = [1, 2, 3]
+lis.sort()
+ln = len(lis)
+if ln % 2 == 0:
+    index = ln - 1
+    t1 = int(ln / 2)
+    t2 = int(t1 - 1)
+    median = (lis[t1] + lis[t2]) / 2
+else:
+    t = int((ln - 1) / 2)
+    median = lis[t]
+print("Median:", median)
