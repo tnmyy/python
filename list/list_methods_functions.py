@@ -134,6 +134,9 @@ l = list("acbdfgehilkj")
 print(l)
 l.sort()
 print(l)
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key=str.lower)
+print(thislist)
 
 # 13. sorted() function
 # returns a new sorted list irrespective of the iterable data type given to it
