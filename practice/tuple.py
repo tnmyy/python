@@ -23,9 +23,18 @@
 
 t = (6, 7, 8, 5, 8, 9, 10)
 mn = min(t)
-ln = len(t)
-
 if t.count(mn) > 1:
-    print("There are more than 1 minimum elements")
+    print("There is no single minimum element, hence position cannot be determined")
 else:
-    loc = t.index(mn)
+    ind = t.index(mn)
+    ln = len(t)
+    if ln % 2 == 0:
+        if (ind == ln / 2) or (ind == ln / 2 + 1):
+            print("Yess it lies in the middle")
+        else:
+            print("NOOOO!")
+    else:
+        if ind == ln // 2:
+            print("Yess it lies in the middle")
+        else:
+            print("NOOOO!")
