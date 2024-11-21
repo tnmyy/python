@@ -19,22 +19,34 @@
 #     else:
 #         print("All unique")
 
-# 4. WAP to check whether the minimum element of the tuples lies in the middle position of tuple
+# # 4. WAP to check whether the minimum element of the tuples lies in the middle position of tuple
 
-t = (6, 7, 8, 5, 8, 9, 10)
-mn = min(t)
-if t.count(mn) > 1:
-    print("There is no single minimum element, hence position cannot be determined")
+# t = (6, 7, 8, 5, 8, 9, 10)
+# mn = min(t)
+# if t.count(mn) > 1:
+#     print("There is no single minimum element, hence position cannot be determined")
+# else:
+#     ind = t.index(mn)
+#     ln = len(t)
+#     if ln % 2 == 0:
+#         if (ind == ln / 2) or (ind == ln / 2 + 1):
+#             print("Yess it lies in the middle")
+#         else:
+#             print("NOOOO!")
+#     else:
+#         if ind == ln // 2:
+#             print("Yess it lies in the middle")
+#         else:
+#             print("NOOOO!")
+
+# 5. WAPP to check if the elements in the first half of the tuple are sorted in ascending order or not
+
+t = (1, 4, 3, 4, 5, 6, 7, 8)
+half = len(t) // 2
+t_ = list(t)
+t_ = t_[:half]
+t_.sort()
+if tuple(t_) == t[:half]:
+    print("Yess")
 else:
-    ind = t.index(mn)
-    ln = len(t)
-    if ln % 2 == 0:
-        if (ind == ln / 2) or (ind == ln / 2 + 1):
-            print("Yess it lies in the middle")
-        else:
-            print("NOOOO!")
-    else:
-        if ind == ln // 2:
-            print("Yess it lies in the middle")
-        else:
-            print("NOOOO!")
+    print("Noo")
