@@ -19,3 +19,7 @@ print(d)
 
 # d = {[1,2]:'value'} ==> Give ERROR
 # d = {"key": "value", "key": "value1"}
+
+# ACCESSING THE ELEMENTS OF A DICTIONARY
+# index => key
+d = {"Rohit"}
