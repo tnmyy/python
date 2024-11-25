@@ -22,4 +22,11 @@ print(d)
 
 # ACCESSING THE ELEMENTS OF A DICTIONARY
 # index => key
-d = {"Rohit"}
+d = {"Rohit": 45, "Virat": 18, "Gill": 77, "Jaiwal": 64}
+print(d)
+print(d["Virat"])  # >> accessing items with keys
+# print(d[1]) >> INDEXING not working
+d = {45: "Rohit", 18: "Virat", 17: "ABD", 45: "Gayle", 17: "Rishabh"}
+print(d[45])
+d = {45: "Rohit", 18: "Virat", 17: "ABD"}
+print(d[45])
