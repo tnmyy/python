@@ -18,3 +18,7 @@ from math import *
 print(pow(3, 4))
 print(floor(-2.3))
 print(factorial(8))
+
+import area_module as ar
+
+print("area of circle of radius r: ", ar.circle(14))
